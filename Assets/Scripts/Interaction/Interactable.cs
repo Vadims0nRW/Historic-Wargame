@@ -43,6 +43,7 @@ namespace Interaction
         NPC,
         Artillery,
         Resource,
+        Others,
     }
 
 }
