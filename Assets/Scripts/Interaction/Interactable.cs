@@ -6,7 +6,7 @@ namespace Interaction
     {
        
         public InteractionType type;
-
+       // public GameObject Resource_System;
         void Start()
         {
 
@@ -31,7 +31,11 @@ namespace Interaction
                     break;
 
                 case InteractionType.Resource:
-                    gameObject.GetComponent<Resource>().PickUp(user);
+                    {
+                        int Rid = gameObject.GetComponent<ResType>().ResId;
+                        int Ramnt = gameObject.GetComponent<ResType>().amount;
+                        user.GetComponent<Resource>().Add_Resource(Rid, Ramnt);
+                    }
                     break;
             }
         }

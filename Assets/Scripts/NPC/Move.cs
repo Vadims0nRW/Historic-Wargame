@@ -41,6 +41,7 @@ namespace NPC_Scripts
             agent = GetComponent<NavMeshAgent>();
             SetDefaultOrder(workshopPosition);
             orderList.Insert(0,defaultOrder);
+            
         }
 
         // Обновление

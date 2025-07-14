@@ -72,7 +72,7 @@ namespace StarterAssets
 
 //        private RaycastHit hit;
  //       private Ray ray;
-        const float range = 2;
+       
 	
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 		private PlayerInput _playerInput;
@@ -86,6 +86,7 @@ namespace StarterAssets
 
         public GameObject cam;
         public RaycastHit hit;
+		public float range = 2;
         public GameObject hitted;
 
         private bool IsCurrentDeviceMouse
