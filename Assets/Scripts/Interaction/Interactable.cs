@@ -1,6 +1,7 @@
 using UnityEngine;
+using Resource_System;
 
-namespace Interaction
+namespace Interaction_System
 {
     public class Interactable : MonoBehaviour
     {

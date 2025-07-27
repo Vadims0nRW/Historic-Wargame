@@ -75,7 +75,7 @@ public class BuildMenuNavigation : MonoBehaviour
         Physics.Raycast(ray, out hit, 10f, LayerMask.GetMask("Ground"));
         GameObject buildScheme = Instantiate(buildingPrefab,hit.point, new Quaternion());
    //   buildScheme.GetComponent<Material>().color = Color.green;
-        buildScheme.GetComponent<Building>().cam = cam;
+        buildScheme.GetComponent<Build_System.Building>().cam = cam;
     //    buildScheme.transform.SetParent(cam.transform);
         
 

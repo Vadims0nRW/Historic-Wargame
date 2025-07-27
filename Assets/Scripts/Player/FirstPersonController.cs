@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
-using Interaction;
+using Interaction_System;
+using Menu_System;
 #endif
 
 namespace StarterAssets
@@ -82,8 +83,9 @@ namespace StarterAssets
 		private GameObject _mainCamera;
 
 		private const float _threshold = 0.01f;
- //       public Interactable interScript;
-
+        //       public Interactable interScript;
+        [Space(10)]
+        [Header("Raycast")]
         public GameObject cam;
         public RaycastHit hit;
 		public float range = 2;
@@ -159,7 +161,7 @@ namespace StarterAssets
             }
             else
             {
-                gameObject.GetComponent<InGameMenu>().HideInteract();
+                gameObject.GetComponent<Menu_System.InGameMenu>().HideInteract();
             }
 
         }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-using Interaction;
+using Interaction_System;
 
 namespace NPC_Scripts
 {
